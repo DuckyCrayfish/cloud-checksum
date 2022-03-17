@@ -1,0 +1,42 @@
+{
+    "timeZone": "UTC",
+    "dependencies": {
+        "enabledAdvancedServices": [
+            {
+                "userSymbol": "Drive",
+                "serviceId": "drive",
+                "version": "v2"
+            }
+        ]
+    },
+    "exceptionLogging": "STACKDRIVER",
+    "oauthScopes": [
+        "https://www.googleapis.com/auth/drive.addons.metadata.readonly",
+        "https://www.googleapis.com/auth/drive.metadata.readonly"
+    ],
+    "urlFetchWhitelist": [],
+    "runtimeVersion": "V8",
+    "addOns": {
+        "common": {
+            "name": "Cloud Checksum",
+            "logoUrl": "https://i.ibb.co/c2qb99G/logo-128.png",
+            "layoutProperties": {
+                "primaryColor": "#204051",
+                "secondaryColor": "#1FD4AF"
+            },
+            "homepageTrigger": {
+                "runFunction": "onHomePage",
+                "enabled": true
+            }
+        },
+        "drive": {
+            "homepageTrigger": {
+                "runFunction": "onHomePage",
+                "enabled": true
+            },
+            "onItemsSelectedTrigger": {
+                "runFunction": "onDriveItemsSelected"
+            }
+        }
+    }
+}
