@@ -53,12 +53,13 @@ main {
     box-shadow: 0 0 20px rgb(0,0,0,.4);
     max-width:100%;
     height: auto;
+    margin-bottom: 20px;
 }
 .description {
-    padding: 0 0 40px;
+    padding: 0 20px 40px;
     line-height: 1.5;
     font-size: 1.2em;
-    width: 80%;
+    max-width: 785px;
     margin: 0 auto;
 }
 footer {
